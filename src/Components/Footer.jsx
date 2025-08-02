@@ -10,8 +10,8 @@ import { MdOutlineCopyright } from "react-icons/md";
 const Footer = () => {
   return (
     <>
-        <div className="row pt-4" style={{background:"#FFFFE0"}}>
-            <div className="col-md-3 ps-2">
+        <div className="row pt-4 px-3" style={{background:"#FFFFE0"}}>
+            <div className="col-md-3">
                 <h5>About Us</h5>
                 <p>The one and only Medical College situated in forest based natural environment in Tamilnadu which is supported by Ayush hospital.</p>
                 <div className='icon-container'>
