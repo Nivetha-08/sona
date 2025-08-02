@@ -11,45 +11,45 @@ const Facts = () => {
 
       gsap.to("#stu", {
         innerText: '10100k',
-        duration: window.innerWidth  <= 768 ? 4 : 2,
+        duration: window.innerWidth  <= 567 ? 3 : 2,
         snap: { innerText: 1 }, 
         ease: "power1.out",
         scrollTrigger : {
             trigger : '#showcase',
-            start: 'top 75%',
+            start: window.innerWidth <= 567 ? "top center" : "top 75%",
         }
       });
 
       gsap.to("#phd", {
         innerText: 500,
-        duration: window.innerWidth  <= 768 ? 4 : 2,
+        duration: window.innerWidth  <= 567 ? 3 : 2,
         snap: { innerText: 1 }, 
         ease: "power1.out",
         scrollTrigger : {
             trigger : '#showcase',
-            start: 'top 75%',
+            start: window.innerWidth <= 567 ? "top center" : "top 75%",
         }
       });
 
       gsap.to("#management", {
         innerText: 100,
-        duration: window.innerWidth  <= 768 ? 4 : 2,
+        duration: window.innerWidth  <= 567 ? 3 : 2,
         snap: { innerText: 1 }, 
         ease: "power1.out",
         scrollTrigger : {
             trigger : '#showcase',
-            start: 'top 75%',
+            start: window.innerWidth <= 567 ? "top center" : "top 75%",
         }
       });
 
       gsap.to("#awards", {
         innerText: 250,
-        duration: window.innerWidth  <= 768 ? 4 : 2,
+        duration: window.innerWidth  <= 567 ? 3 : 2,
         snap: { innerText: 1 }, 
         ease: "power1.out",
         scrollTrigger : {
             trigger : '#showcase',
-            start: 'top 75%',
+            start: window.innerWidth <= 567 ? "top center" : "top 75%",
         }
       });
     }, [])
