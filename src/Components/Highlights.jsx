@@ -5,19 +5,20 @@ const Highlights = () => {
     <>
         <div className="container mt-3">
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-lg-4">
                     <h3 className='text-primary text-center'>SMCNY Highlights</h3>
-                    <iframe 
-                        width="400" 
-                        height="300" 
-                        src="https://www.youtube.com/embed/_Q6cMdVMby0" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-
+                    <div class="ratio ratio-16x9 mt-3">
+                        <iframe 
+                            width="400" 
+                            height="300" 
+                            src="https://www.youtube.com/embed/_Q6cMdVMby0" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 mt-md-4 mt-lg-0">
                     <h3 className='text-primary text-center'>Press Release</h3>
                     <ul>
                         <li><a href="#" className='text-success' style={{textDecoration:"none"}}>Harit Yoga Celebration at Yercaud</a> 11th June 2025 : Dinakaran</li>
@@ -28,7 +29,7 @@ const Highlights = () => {
                         <li><a href="#" className='text-success' style={{textDecoration:"none"}}>International Yoga Day  Awareness Rally</a>  22th June 2023 : Daily Thanthi</li>
                     </ul>
                 </div>
-                <div className="col-md-4 text-center">
+                <div className="col-lg-4 text-center mt-md-2 mt-lg-0">
                     <h3 className='text-primary'>Recent News</h3>
                     <img src="https://www.bing.com/th/id/OIP.ylLiUAsR4gKMgJsG-SpXUAHaFd?w=244&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" className='img-fluid' alt="" />
                 </div>

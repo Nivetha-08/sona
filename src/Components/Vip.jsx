@@ -13,8 +13,8 @@ const Vip = () => {
 
             <div className="row">
 
-                <div className="col-md-4">
-                    <h3 className='text-primary'>VIP Message</h3>
+                <div className="col-lg-6 col-xl-4 mx-auto">
+                    <h3 className='text-primary mb-md-4 mb-lg-0'>VIP Message</h3>
                     <div className='text-center'>
                         <img src="https://www.sonamedicalcollege.ac.in/wp-content/uploads/2024/02/ayush-vaidhya.jpg" style={{height:"200px", width:"250px"}} className='img-fluid ' alt="vip" />
                     </div>
@@ -27,16 +27,16 @@ const Vip = () => {
                     </div>
                 </div>
 
-                <div className="col-md-4" style={{background:"#cce5ff"}}>
+                <div className="col-lg-6 col-xl-4 mx-auto" style={{background:"#cce5ff"}}>
                     <h3 className='text-primary'>News and Events</h3>
                     {arr.map((v,i)=>(
                         <React.Fragment key={i}>
                             <div className='d-flex'>
-                                <div><img src={v.src} alt="map imgs" style={{height:"70px", width:"90px"}}/></div>
-                                <div>
+                                <div><img src={v.src} alt="map imgs" style={{height:"90px", width:"150px"}}/></div>
+                                <div className='ps-2'>
                                     <a href='#' className='text-success' style={{textDecoration:"none"}}>{v.title}</a>
-                                    <small className='text-muted ms-md-3'>{v.sub}</small><br />
-                                    <a href='#' className='text-success ms-md-3 text-success' style={{textDecoration:"none"}}>{v.read}</a>
+                                    <div className='text-muted'>{v.sub}</div>
+                                    <a href='#' className='text-success text-success' style={{textDecoration:"none"}}>{v.read}</a>
                                 </div>
                             </div>
                             <div className='py-4'></div>
@@ -44,10 +44,10 @@ const Vip = () => {
                     ))}
                 </div>
 
-                <div className="col-md-4">
+                <div className="col-lg-6 col-xl-4 mx-auto">
                     <div className="row">
-                        <div className="col">
-                            <h3 className='text-primary py-2'>Power on Me</h3>
+                        <h3 className='text-primary py-2'>Power on Me</h3>
+                        <div className="ratio ratio-16x9">
                             <iframe 
                                 width="400" 
                                 height="200" 
@@ -57,8 +57,8 @@ const Vip = () => {
                                 allowfullscreen>
                             </iframe>
                         </div>
-                        <div className="col">
-                            <h3 className='text-primary py-2'>Student's Yoga Dance</h3>
+                        <h3 className='text-primary py-2 mt-3'>Student's Yoga Dance</h3>
+                        <div className="ratio ratio-16x9">
                             <iframe 
                                 width="400" 
                                 height="200" 

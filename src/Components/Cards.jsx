@@ -11,9 +11,9 @@ const Cards = () => {
   return (
     <>
         <div className="container pt-md-5">
-            <div className="row">
+            <div className="row mt-3 mt-lg-0">
                 {arr.map((v, i) => (
-                <div className="col-md-4 mb-4" key={i}>
+                <div className="col-lg-4 mb-4" key={i}>
                     <div className="card h-100">
                     <img src={v.src} alt="card-img-top" className="card-img-top" />
                     <div className="card-body py-2">
