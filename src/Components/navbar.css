@@ -1,0 +1,15 @@
+@media(min-width: 992px){
+    .navbar .dropdown .dropdown-menu{
+        display: none;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+    .navbar .dropdown:hover .dropdown-menu .dropdown-item{
+        background-color: #0dcaf0;
+    }
+    .navbar .dropdown:hover .dropdown-menu .dropdown-item:hover{
+        opacity: 0.5;
+    }
+}
