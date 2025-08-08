@@ -30,9 +30,9 @@ const Counselling = () => {
                 </div>
               </div>
               <div className="col-md-6 mt-1 mt-md-0 rounded bg-white d-flex justify-content-center align-items-center">
-                <span className="text-warning h1">
+                <span className="text-danger h1">
                   Counselling Code:
-                  <span className="text-info"> 874</span>
+                  <span className="text-primary"> 874</span>
                 </span>
               </div>
             </div>

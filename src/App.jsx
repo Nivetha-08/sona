@@ -31,18 +31,20 @@ const App = () => {
     <>
       <Navbar />
       <Carousel />
-      <Counselling />
-      <SectionNavigator fn={activeHandler} act={active} />
-      {active === 'highlights' && <Highlights />}
-      {active === 'achieve' && <Achievements />}
-      {active === 'vip' && <Vip />}
-      {active === 'sona' && <Cards />}
-      {active === 'news' && <News_and_Events />}
-      <Association />
-      <Institutions />
-      <Facts />
-      <Header />
-      <Footer />
+      <div id='hover-img'>
+        <Counselling />
+        <SectionNavigator fn={activeHandler} act={active} />
+        {active === 'highlights' && <Highlights />}
+        {active === 'achieve' && <Achievements />}
+        {active === 'vip' && <Vip />}
+        {active === 'sona' && <Cards />}
+        {active === 'news' && <News_and_Events />}
+        <Association />
+        <Institutions />
+        <Facts />
+        <Header />
+        <Footer />
+      </div>
     </>
   )
 }
