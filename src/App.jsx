@@ -17,6 +17,7 @@ import { useState } from 'react'
 import SectionNavigator from './Components/SectionNavigator'
 import { useCallback } from 'react'
 import News_and_Events from './Components/News_and_Events'
+import "./App.css"
 
 const App = () => {
 

@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className='text-center py-3' style={{background:"whiteSmoke"}}>
-            <span><MdOutlineCopyright /></span><span>2024 Sona Medical College of Naturopathy and Yoga . All rights reserved.</span>
+            <span><MdOutlineCopyright /></span><span>2024 Sona Medical College of Naturopathy and Yoga. All rights reserved.</span>
         </div>
     </>
   )

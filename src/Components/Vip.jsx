@@ -23,14 +23,16 @@ const Vip = () => {
 
         <div className="row">
           <div className="col-lg-4 col-xl-4 mx-auto card-group">
-            <div className="card">
-            <div className="pt-3">
-              <img
+            <div className="card mt-3 mt-lg-0">
+            <div className="">
+              <div>
+                <img
                 src="https://www.sonamedicalcollege.ac.in/wp-content/uploads/2024/02/ayush-vaidhya.jpg"
                 style={{ height: "200px", width: "250px" }}
                 className="card-img-lg-top d-block w-lg-100 w-75 m-auto"
                 alt="vip"
               />
+              </div>
             </div>
             <div className="card-body">
                 <div className="card-title h6">
@@ -48,7 +50,7 @@ const Vip = () => {
           </div>
 
           <div className="col-lg-4 px-4  col-xl-4 mx-auto">
-              <div className="card">
+              <div className="card mt-3 mt-lg-0">
                 <div className="card-img">
                   <div className="ratio ratio-16x9">
                     <iframe
@@ -72,7 +74,7 @@ const Vip = () => {
           </div>
 
           <div className="col-lg-4 px-4  col-xl-4 mx-auto">
-              <div className="card">
+              <div className="card mt-3 mt-lg-0">
                 <div className="card-img">
                   <div className="ratio ratio-16x9">
                     <iframe

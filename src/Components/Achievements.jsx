@@ -84,11 +84,11 @@ const Achievements = () => {
             {arr.map((client) => (
               <div className="card" key={client.id}>
                 <div className="card-img">
-                  <img
+                  <div><img
                     src={client.src}
                     alt={client.id}
                     className="img-fluid d-block w-100 m-auto"
-                  />
+                  /></div>
                 </div>
                 <div className="card-body"><p className="feedback">{client.title}</p></div>
                 <div className="card-footer d-flex justify-content-between ">
@@ -105,8 +105,8 @@ const Achievements = () => {
             <button
               aria-label="Previous Slide"
               style={{
-                border: "2px solid black",
-                color: "#a0c5f2ff",
+                border: "2px solid #1c3556",
+                color: "#1c3556",
                 background: "white",
                 borderRadius: "50%",
                 fontSize: "15px",
@@ -120,8 +120,8 @@ const Achievements = () => {
             <button
               aria-label="Next Slide"
               style={{
-                border: "2px solid black",
-                color: "#a0c5f2ff",
+                border: "2px solid #1c3556",
+                color: "#1c3556",
                 background: "white",
                 borderRadius: "50%",
                 fontSize: "15px",

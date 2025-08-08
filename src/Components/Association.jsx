@@ -16,7 +16,9 @@ const Association = () => {
           }}
         />
 
-        <img src="https://www.sonamedicalcollege.ac.in/wp-content/uploads/2022/09/sona-group.jpg" alt="association" className='img-fluid' />
+        <div>
+          <img src="https://www.sonamedicalcollege.ac.in/wp-content/uploads/2022/09/sona-group.jpg" alt="association" className='img-fluid' />
+        </div>
     </>
   )
 }

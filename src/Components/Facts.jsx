@@ -55,7 +55,7 @@ const Facts = () => {
 
   return (
     <div>
-        <div className='showcase row mt-5' id='showcase' style={{ background: '#1c3556' }}>
+        <div className='showcase row' id='showcase' style={{ background: '#1c3556' }}>
           <div className="col-6 col-lg-3 text-center">
             <img src="https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/06/icon-trust.png" alt="" className='img-fluid mt-5' />
             <div className='my-4 h1 text-white' id='stu'>ref1</div>

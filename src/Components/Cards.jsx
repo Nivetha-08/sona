@@ -49,7 +49,7 @@ const Cards = () => {
           {arr.map((v, i) => (
             <div className="col-lg-4 mb-4" key={i}>
               <div className="card h-100">
-                <img src={v.src} alt="card-img-top" className="card-img-top" />
+                <div><img src={v.src} alt="card-img-top" className="card-img-top" /></div>
 
                 <div className="card-body py-2">
                   <h4 className="card-title text-success fw-bolder h5 text-center pt-2">

@@ -12,7 +12,6 @@ const Institutions = () => {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      dots: true,
       speed: 4000,
       autoplaySpeed: 4000,
       cssEase: "linear",
@@ -38,10 +37,10 @@ const Institutions = () => {
     { id: 2, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/sona-tech.jpg", content: "Sona College of Technology - 1997, Founder - (late) Sri.M.S.Chockalingam" },
     { id: 3, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/mba.jpg", content: "Sona School of Management - 1998, Founder - (late) Sri.M.S.Chockalingam" },
     { id: 4, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/arts.jpg", content: "Sona College of Arts and Science - 2017, Founder- Mr.C.Valliappa" },
-    { id: 5, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/tpt-1.jpg", content: "Thiagarajar Polytechnic College -1958, Founder - (late) Sri.Karumuttu Thiagarajar" },
-    { id: 6, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/sona-tech.jpg", content: "Sona College of Technology - 1997, Founder - (late) Sri.M.S.Chockalingam" },
-    { id: 7, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/mba.jpg", content: "Sona School of Management - 1998, Founder - (late) Sri.M.S.Chockalingam" },
-    { id: 8, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/arts.jpg", content: "Sona College of Arts and Science - 2017, Founder- Mr.C.Valliappa" },
+    // { id: 5, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/tpt-1.jpg", content: "Thiagarajar Polytechnic College -1958, Founder - (late) Sri.Karumuttu Thiagarajar" },
+    // { id: 6, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/sona-tech.jpg", content: "Sona College of Technology - 1997, Founder - (late) Sri.M.S.Chockalingam" },
+    // { id: 7, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/mba.jpg", content: "Sona School of Management - 1998, Founder - (late) Sri.M.S.Chockalingam" },
+    // { id: 8, src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2020/08/arts.jpg", content: "Sona College of Arts and Science - 2017, Founder- Mr.C.Valliappa" },
   ]
 
   return (
@@ -65,7 +64,7 @@ const Institutions = () => {
           <Slider ref={sliderRef} {...settings}>
             {arr.map((v, i) => (
           <div className="col-12 col-sm-6 col-md-4 col-lg-2 mb-4" key={i}>
-            <img src={v.src} alt="institution" className="img-fluid rounded mb-2 m-auto" />
+            <div className="img-container"><img src={v.src} alt="institution" className="img-fluid rounded mb-2 m-auto" /></div>
             <p className="container text-center p-0 px-md-5 small">{v.content}</p>
           </div>
         ))}
