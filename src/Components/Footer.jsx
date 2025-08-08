@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-3">
-                <h5>CITY CLINIC :</h5>#f6faff
+                <h5>CITY CLINIC :</h5>
                 <p>
                     Sona College of Technology Campus,<br />
                     Salem – 636005.

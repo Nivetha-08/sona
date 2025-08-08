@@ -55,7 +55,7 @@ const Achievements = () => {
     {
       id: 4,
       src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2023/07/silambam-medical-students-150x150.webp",
-      title: "Medical Students won Gold and Bronze medals in the District Level Silambam Match",
+      title: "Medical Students won Gold medals in the District Level Silambam Match",
       sub: "July 8, 2023",
       read: "Read More ",
     },
