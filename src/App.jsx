@@ -13,23 +13,34 @@ import Association from './Components/Association'
 import Institutions from './Components/Institutions'
 import Facts from './Components/Facts'
 import Footer from './Components/Footer'
+import { useState } from 'react'
+import SectionNavigator from './Components/SectionNavigator'
+import { useCallback } from 'react'
+import News_and_Events from './Components/News_and_Events'
 
 const App = () => {
+
+  const [active, setActive] = useState('achieve')
+
+  const activeHandler = useCallback((compName) => {
+    setActive(compName)
+  }, [])
+
   return (
     <>
-      <Header />
       <Navbar />
       <Carousel />
       <Counselling />
-      <AutoPlay />
-      <Admissions />
-      <Highlights />
-      <Achievements />
-      <Vip />
-      <Cards />
+      <SectionNavigator fn={activeHandler} act={active} />
+      {active === 'highlights' && <Highlights />}
+      {active === 'achieve' && <Achievements />}
+      {active === 'vip' && <Vip />}
+      {active === 'sona' && <Cards />}
+      {active === 'news' && <News_and_Events />}
       <Association />
       <Institutions />
       <Facts />
+      <Header />
       <Footer />
     </>
   )

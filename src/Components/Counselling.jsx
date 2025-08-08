@@ -1,20 +1,71 @@
-import React from 'react'
+import React from "react";
 
 const Counselling = () => {
   return (
     <>
-        <div className="row text-center" style={{background:"#FFC0CB"}}>
-            <div className="col-md-4 h5 pt-md-3">Online Fees Payment</div>
-            <div className="col-md-4 h5 pt-md-3"><span className='text-danger'>Counselling Code:</span><span className='text-success'>874</span></div>
-            <div className="col-md-4 h5">
-                <button className='d-flex btn border'>
-                    <img style={{height:"50px", width:"50px"}} src="https://th.bing.com/th/id/OIP.8pdr_byzkXkD0t4tZpco4QAAAA?w=216&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="android" />
-                    <span>DOWNLOAD ANDROID PPLICATION FOR ONLINE APPLICATION 2024</span>
-                </button>
-            </div>
-        </div>
-    </>
-  )
-}
+     
 
-export default Counselling
+      <div className="container-fluid container-md mt-3">
+        <div className="h3 text-center mb-1">Quick Links</div>
+        <hr
+          className="mx-auto"
+          style={{
+            width: "100px",
+            color: "red",
+            border: "3px solid blue",
+            margin: "0px",
+            borderRadius: "10px",
+            marginBottom: '20px'
+          }}
+        />
+
+          {/* quick links and counselling code */}
+          <div className="container-fluid container-md">
+            <div className="row">
+              <div className="col-md-6 px-1">
+                <div className="list-group">
+                  <a href="#" className="list-group-item list-group-item-action text-primary">Online Fees Payments</a>
+                  <a href="#" className="list-group-item list-group-item-action text-primary">Online Enquiry</a>
+                  <a href="#" className="list-group-item list-group-item-action text-primary">Online Application</a>
+                </div>
+              </div>
+              <div className="col-md-6 mt-1 mt-md-0 rounded bg-white d-flex justify-content-center align-items-center">
+                <span className="text-warning h1">
+                  Counselling Code:
+                  <span className="text-info"> 874</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        {/* marquee */}
+        <div
+          className="card p-3 mt-3"
+          style={{ borderRadius: "15px", background: "white" }}
+        >
+          <marquee className="" direction="left">
+            <span className="badge badge-pill bg-primary me-1 ms-3">new</span>
+            <span className="text-success">
+              {" "}
+              4th Annual Day Celebration 2025{" "}
+            </span>
+            <span className="badge badge-pill bg-primary me-1 ms-3">new</span>
+            <span className="text-success"> International Day 2025 </span>
+            <span className="badge badge-pill bg-primary me-1 ms-3">new</span>
+            <span className="text-success">
+              {" "}
+              The textile to chettiar Industrialist C. Valliappa{" "}
+            </span>
+            <span className="badge badge-pill bg-primary me-1 ms-3">new</span>
+            <span className="text-success">
+              {" "}
+              Sona Accademy: Building the Future of Cricket{" "}
+            </span>
+          </marquee>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Counselling;

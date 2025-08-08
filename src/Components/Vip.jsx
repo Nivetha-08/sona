@@ -1,79 +1,108 @@
-import React from 'react'
+import React from "react";
 
 const Vip = () => {
+  const vipText = `"I practice Yoga. I woke up at 3:30 this morning to do . Additionally, I have been following a vegan diet for the last 5 months. I am trying to focus on a holistic pattern of life, which begins with what you eat, of course, and what you put into your system," Chief Justice Chandrachud told ANI while sharing insights into his wellness practices."`;
 
-    const arr = [
-        {id:1, src:"https://www.sonamedicalcollege.ac.in/wp-content/uploads/2025/06/0X9A1876-768x512.jpg", title:"Harit Yoga Celebration at Yercaud: A Milestone in Sustainable Wellness Pioneering Green Yoga Initiative Marks International Yoga Day 2025", sub:"June 10, 2025", read:"Read More >>"},
-        {id:1, src:"https://www.sonamedicalcollege.ac.in/wp-content/uploads/2025/03/medical-camp-6-768x576.jpeg", title:"Medical Camp at Government Girls School, Sarkarkollapatti", sub:"March 3, 2025", read:"Read More >>"},
-        {id:1, src:"https://www.sonamedicalcollege.ac.in/wp-content/uploads/2025/03/medical-camp-4-768x576.jpeg", title:"Medical Camp at Government Girls School, Vellalapatti", sub:"March 3, 2025", read:"Read More >>"}
-    ]
+  
   return (
     <>
-        <div className="container">
+      <div className="container-fluid container-md">
 
-            <div className="row">
+        <div className="h3 text-center mt-3 mb-1">VIP Message</div>
+        <hr
+          className="mx-auto"
+          style={{
+            width: "100px",
+            color: "red",
+            border: "3px solid blue",
+            margin: "0px",
+            borderRadius: "10px",
+            marginBottom: '20px'
+          }}
+        />
 
-                <div className="col-lg-6 col-xl-4 mx-auto">
-                    <h3 className='text-primary mb-md-4 mb-lg-0'>VIP Message</h3>
-                    <div className='text-center'>
-                        <img src="https://www.sonamedicalcollege.ac.in/wp-content/uploads/2024/02/ayush-vaidhya.jpg" style={{height:"200px", width:"250px"}} className='img-fluid ' alt="vip" />
-                    </div>
-                    <div className='my-3'>
-                        <p className='fw-bolder text-center'>"I wake up 3.30 am for Yoga, embraced vegan lifestyle; PM Modi suggested AYUSH 'Vaidya' during Covid": CJI Chandrachud</p>
-                        <p className='text-center'>"I practice Yoga. I woke up at 3:30 this morning to do . Additionally, I have been following a vegan diet for the last 5 months. I am trying to focus on a holistic pattern of life, which begins with what you eat, of course, and what you put into your system," Chief Justice Chandrachud told ANI while sharing insights into his wellness practices.</p>
-                        <div className='text-center'>
-                            <button className='btn btn-info text-light'>READ MORE</button>
-                        </div>
-                    </div>
+        <div className="row">
+          <div className="col-lg-4 col-xl-4 mx-auto card-group">
+            <div className="card">
+            <div className="pt-3">
+              <img
+                src="https://www.sonamedicalcollege.ac.in/wp-content/uploads/2024/02/ayush-vaidhya.jpg"
+                style={{ height: "200px", width: "250px" }}
+                className="card-img-lg-top d-block w-lg-100 w-75 m-auto"
+                alt="vip"
+              />
+            </div>
+            <div className="card-body">
+                <div className="card-title h6">
+                     "I wake up 3.30 am for Yoga, embraced vegan lifestyle; PM Modi
+                    suggested AYUSH 'Vaidya' during Covid": CJI Chandrachud
                 </div>
-
-                <div className="col-lg-6 col-xl-4 mx-auto" style={{background:"#cce5ff"}}>
-                    <h3 className='text-primary'>News and Events</h3>
-                    {arr.map((v,i)=>(
-                        <React.Fragment key={i}>
-                            <div className='d-flex'>
-                                <div><img src={v.src} alt="map imgs" style={{height:"90px", width:"150px"}}/></div>
-                                <div className='ps-2'>
-                                    <a href='#' className='text-success' style={{textDecoration:"none"}}>{v.title}</a>
-                                    <div className='text-muted'>{v.sub}</div>
-                                    <a href='#' className='text-success text-success' style={{textDecoration:"none"}}>{v.read}</a>
-                                </div>
-                            </div>
-                            <div className='py-4'></div>
-                        </React.Fragment>
-                    ))}
-                </div>
-
-                <div className="col-lg-6 col-xl-4 mx-auto">
-                    <div className="row">
-                        <h3 className='text-primary py-2'>Power on Me</h3>
-                        <div className="ratio ratio-16x9">
-                            <iframe 
-                                width="400" 
-                                height="200" 
-                                src="https://www.youtube.com/embed/_Q6cMdVMby0" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <h3 className='text-primary py-2 mt-3'>Student's Yoga Dance</h3>
-                        <div className="ratio ratio-16x9">
-                            <iframe 
-                                width="400" 
-                                height="200" 
-                                src="https://www.youtube.com/embed/_Q6cMdVMby0" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
+                <div className="card-subtitle">
+                    {vipText.length >= 100
+                    ? vipText.slice(0, 100) + "..."
+                    : vipText}
                 </div>
             </div>
-        </div>
-    </>
-  )
-}
+            <div className="card-footer text-end"><button className="btn btn-primary">Read More</button></div>
+          </div>
+          </div>
 
-export default Vip
+          <div className="col-lg-4 px-4  col-xl-4 mx-auto">
+              <div className="card">
+                <div className="card-img">
+                  <div className="ratio ratio-16x9">
+                    <iframe
+                      width="400"
+                      height="200"
+                      src="https://www.youtube.com/embed/_Q6cMdVMby0"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="card-title h6">Power on Me</div>
+                  <div className="subtitle">Lorem, ipsum dolor sit amet consectetur. Distinctio eaque iure repudiandae unde voluptatibus voluptatum ut! Magnam magni nemo, quia quasi autem excepturi in vitae. Voluptatibus, ut?</div>
+                </div>
+                <div className="card-footer text-muted text-end">
+                  Updated on 2020
+                </div>
+              </div>
+          </div>
+
+          <div className="col-lg-4 px-4  col-xl-4 mx-auto">
+              <div className="card">
+                <div className="card-img">
+                  <div className="ratio ratio-16x9">
+                    <iframe
+                      width="400"
+                      height="200"
+                      src="https://www.youtube.com/embed/_Q6cMdVMby0"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <div className="card-title h6">Student's Yoga Dance</div>
+                  <div className="subtitle">Lorem, ipsum dolor sit amet consectetur. Distinctio eaque iure repudiandae unde voluptatibus voluptatum ut! Magnam magni nemo, quia quasi autem excepturi in vitae. Voluptatibus, ut?</div>
+                </div>
+                <div className="card-footer text-muted text-end">
+                  Updated on 2020
+                </div>
+              </div>
+          </div>
+
+          
+            
+        </div>
+
+        
+      </div>
+    </>
+  );
+};
+
+export default Vip;

@@ -10,3 +10,12 @@
   margin-right: 10px; 
   cursor: pointer;
 }
+
+ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+ul li a:hover{
+  color: blue;
+}
