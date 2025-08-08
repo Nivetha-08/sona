@@ -34,7 +34,7 @@ const Achievements = () => {
     {
       id: 1,
       src: "https://www.sonamedicalcollege.ac.in/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-08-at-10.15.56-150x150.jpeg",
-      title: "Sona Medical College of Naturopathy participated CM Hockey Trophy for girls",
+      title: "Sona Medical College participated CM Hockey Trophy for girls",
       sub: "February 27, 2023",
       read: "Read More ",
     },
@@ -105,7 +105,7 @@ const Achievements = () => {
             <button
               aria-label="Previous Slide"
               style={{
-                border: "2px solid #748ca9ff",
+                border: "2px solid black",
                 color: "#a0c5f2ff",
                 background: "white",
                 borderRadius: "50%",
@@ -120,7 +120,7 @@ const Achievements = () => {
             <button
               aria-label="Next Slide"
               style={{
-                border: "2px solid #748ca9ff",
+                border: "2px solid black",
                 color: "#a0c5f2ff",
                 background: "white",
                 borderRadius: "50%",

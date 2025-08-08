@@ -13,8 +13,8 @@ const Institutions = () => {
       slidesToScroll: 1,
       autoplay: true,
       dots: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
+      speed: 4000,
+      autoplaySpeed: 4000,
       cssEase: "linear",
       pauseOnHover: true,
       responsive: [
